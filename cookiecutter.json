@@ -1,0 +1,25 @@
+{
+  "full_name": "2XL",
+  "email": "chenglong.zq@gmail.com",
+
+  "app_name": "Example App",
+  "repo_name": "...repo",
+
+  "site_name": "https://example.com",
+  "company_name": "Company Name",
+
+  "project_name": "...project",
+  "project_short_description": "...description",
+  "year": "2019",
+  "release_date": "yyyy-mm-dd",
+
+  "component": "components",
+  "component_name": "Terms",
+  "personal_data": "email, address, phone...",
+  "content_distribution": "content distribution",
+
+  "filename": "terms_and_conditions",
+  "terms_changes_notification_interval": 30,
+
+  "version": "0.0.1"
+}
