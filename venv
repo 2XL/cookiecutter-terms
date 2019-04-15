@@ -1,0 +1,31 @@
+#!/bin/bash
+  
+#
+# Load venv wrapper
+#
+
+echo "venv/load"
+# export WORKON_HOME=$HOME/VirtualEnvs
+# source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+# echo "Create virtualenv 4 current dir"
+# check if .venv directory exist
+# if exist try lo load it otherwise use global
+
+# check if .venv create .venv if not exist
+
+project=$(basename `pwd`)
+
+echo "venv/try"
+workon $project  2>/dev/null
+if [ "$?" -eq "0" ]
+then
+        echo "venv/set: $1"
+else
+        echo "venv/make: $project"
+        mkvirtualenv $project -p /usr/bin/python
+        workon $project
+        echo "venv/endmake"
+echo "venv/ok"
+fi
+
+

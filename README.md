@@ -1,6 +1,10 @@
 # cookiecutter-terms
 cookiecutter terms and conditions
 
+### Motivation
+
+this is a side project to learn pdf generation and interactive site content translations
+
 ### Feature 
     
     Generate Markdown 
@@ -14,27 +18,15 @@ cookiecutter terms and conditions
 ### Dependencies
 
 
+- react-markdown: for markdown rendering
 - react-pdf: for pdf generation
-- react-markdown: for rendering
-
-### Usage
-
-clone and customize
-
-```bash
-
-git clone https://github.com/2XL/cookiecutter-terms
-
-cd cookiecutter-terms
-# create virtualenv
-pip-sync
-
-cookiecutter . --no-input -f
-
-```
+- TODO: react-intl: for translations
 
 
 ### Getting Started with React
+
+
+`/app` contains the boilerplate of a base react app, it was generated with:
 
 ```bash
 
@@ -63,6 +55,34 @@ We suggest that you begin by typing:
   npm start
 
 Happy hacking!
+
+```
+
+### Example Usage
+
+- clone and customize the terms template at 
+
+`{{cookiecutter.component}}/{{cookiecutter.filename}}.md`
+
+
+- setup cookiecutter env
+
+```bash
+git clone https://github.com/2XL/cookiecutter-terms
+
+cd cookiecutter-terms
+
+. ./venv        # create virtualenv         :: depends :: pip install virtualenvwrapper 
+pip-sync        # install dependencies      :: depends :: pip install pip-tools
+
+cookiecutter . --no-input -f
+
+cd app 
+
+npm install && npm start 
+
+chromium-browser http://localhost:3000 # replace with ur browser of choice
+
 
 
 ```
