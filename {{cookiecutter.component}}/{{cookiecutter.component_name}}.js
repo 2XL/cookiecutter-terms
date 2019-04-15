@@ -1,14 +1,15 @@
+import React from 'react';
+
 import propTypes from 'prop-types'
+
+import ReactMarkdown from 'react-markdown'
 
 const TermsAndConditions = ({termsTxt}) => {
 
-
     return (
+        <ReactMarkdown source={termsTxt}>
 
-        <>
-            {{cookiecutter.placeholder}}
-        </>
-
+        </ReactMarkdown>
     )
 };
 
@@ -17,7 +18,7 @@ TermsAndConditions.propTypes = {
 };
 
 TermsAndConditions.defaultProps = {
-    termsTxt: ``
+    termsTxt: `{{cookiecutter.placeholder}}`
 };
 
 

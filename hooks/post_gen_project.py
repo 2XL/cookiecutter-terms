@@ -1,5 +1,8 @@
 import re
 import sys
+import os
+from os import listdir
+import shutil
 
 placeholder = '{{ cookiecutter.placeholder }}'
 
@@ -10,13 +13,6 @@ output_component = '{{cookiecutter.component_name}}.js'
 
 
 # todo generate pdf from terms_and_conditions.md
-import os.path
-
-# import pdb; pdb.set_trace()
-
-print(output_terms, os.path.isfile(output_terms))
-print(output_component, os.path.isfile(output_component))
-
 components_block = None
 if os.path.isfile(output_terms) and os.path.isfile(output_terms):
     with open(output_terms) as terms:
@@ -27,5 +23,18 @@ if os.path.isfile(output_terms) and os.path.isfile(output_terms):
 
         with open(output_component, 'w') as components:
             components.write(components_block)
+
+project_root = os.path.dirname(os.getcwd())
+components_dirname = '{{cookiecutter.component}}'
+react_app_dirname = 'app'
+
+if os.path.isfile(os.path.join(project_root, components_dirname, 'App.js')):
+    shutil.move(os.path.join(project_root, components_dirname, 'App.js'),
+                os.path.join(project_root, react_app_dirname, 'src'))
+
+if os.path.isdir(os.path.join(project_root, components_dirname)) and os.path.isdir(
+        os.path.join(project_root, react_app_dirname, 'src')):
+    print("react src dir for component found")
+    shutil.move(os.path.join(project_root, components_dirname), os.path.join(project_root, react_app_dirname, 'src'))
 
 print("POST_GEN")
