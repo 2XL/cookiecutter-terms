@@ -11,3 +11,5 @@ if not re.match(EMAIL_REGEXP, email):
 
     # exits with status 1 to indicate failure
     sys.exit(1)
+
+print("PRE_GEN")

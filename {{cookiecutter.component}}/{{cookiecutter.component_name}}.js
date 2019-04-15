@@ -5,7 +5,9 @@ const TermsAndConditions = ({termsTxt}) => {
 
     return (
 
-        <>@@@@</>
+        <>
+            {{cookiecutter.placeholder}}
+        </>
 
     )
 };

@@ -12,7 +12,7 @@
   "project_short_description": "...description",
   "year": "2019",
   "release_date": "yyyy-mm-dd",
-
+  "placeholder": "#@@@#",
   "component": "components",
   "component_name": "Terms",
   "personal_data": "email, address, phone...",
