@@ -14,6 +14,8 @@ this is a side project to learn pdf generation and interactive site content tran
     Generate PDF
     
     Generate Translations
+        https://react-pdf.org/repl?example=page-wrap exponer interficie interactiva para traducir
+        
 
 ### Dependencies
 
