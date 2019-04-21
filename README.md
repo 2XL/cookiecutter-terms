@@ -7,15 +7,36 @@ this is a side project to learn pdf generation and interactive site content tran
 
 ### Feature 
     
-    Generate Markdown 
+```
+cookiecutter .
+```
+    0. Generate Markdown    
+    1. Generate React component
+
+```
+/view/pdf/     
+```
     
-    Generate React component
+    2. PDF Viewer    
+
+```
+/view/pdf/download/  # /action/cmd/action/
+```    
+
+    - TODO: Generate PDF
     
-    Generate PDF
-    
-    Generate Translations
-        https://react-pdf.org/repl?example=page-wrap exponer interficie interactiva para traducir
-        
+```
+/view/pdf/edit/
+```    
+    - TODO: Generate Terms Update Editor Page - Create editor interface, connect instances with RtcDataChannel && RtcPeerConnection(WebRTC)
+
+```
+/view/pdf/edit/translate/ # view pdf, edit and translate it
+```    
+    - TODO: Generate [Translations](https://react-pdf.org/repl?example=page-wrap) exponer interficie interactiva para traducir
+
+
+expose the app trough github.io or netlify         
 
 ### Dependencies
 

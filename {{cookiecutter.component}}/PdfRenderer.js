@@ -1,5 +1,8 @@
 import React from 'react';
-import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
+
+import {Document, Page, Text, View, StyleSheet} from '@react-pdf/renderer';
+
+import {PDFViewer} from '@react-pdf/renderer';
 
 // Create styles
 const styles = StyleSheet.create({
@@ -15,15 +18,30 @@ const styles = StyleSheet.create({
 });
 
 // Create Document Component
-const MyDocument = () => (
-    <Document>
-        <Page size="A4" style={styles.page}>
-            <View style={styles.section}>
-                <Text>Section #1</Text>
-            </View>
-            <View style={styles.section}>
-                <Text>Section #2</Text>
-            </View>
-        </Page>
-    </Document>
-);
+const PdfRenderer = ({children}) => {
+    console.log(children);
+    const onPdfRendered = () => {
+        console.log("rendered")
+    };
+
+
+    return (
+        <PDFViewer
+            <Document>
+                <Page
+                    size="A4"
+                    onRender={onPdfRendered}
+                    style={styles.page}>
+                    <View>
+
+                    </View>
+                    {/*{children}*/}
+                </Page>
+            </Document>
+        </PDFViewer>
+    )
+
+};
+
+
+export default PdfRenderer;
