@@ -4,48 +4,52 @@ import Terms from './components/Terms'
 
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 import "react-tabs/style/react-tabs.css";
-import {Button, Hero, Container} from 'reactbulma'
+
+import PdfRenderer from './components/PdfRenderer'
+import Intl from "./components/IntlTrans"
+
+
+
 
 class App extends Component {
 
-
+    onTabSelectEvent = (...props) => {
+        console.log(props)
+    };
     render() {
         const TabsStyle = {
             width: "100%",
             height: "100%",
-            minHeight: '900px'
+            minHeight: '4000px'
         };
 
-        const TabPanelStyle = {
-            minHeight: 900
-        };
 
         return (
             <div className="App">
                 <header className="App-header">
 
 
-                    <Tabs style={TabsStyle}>
+
+                    <Tabs style={TabsStyle} onSelect={this.onTabSelectEvent}>
                         <TabList>
                             <Tab>Default view</Tab>
                             <Tab>Reader Pdf</Tab>
                         </TabList>
 
                         <TabPanel>
-                            <h2>
-
-                            </h2>
+                            <h4>
+                                Markdown Reader
+                            </h4>
                             <div>
                                 <Terms>
 
                                 </Terms>
                             </div>
-
                         </TabPanel>
                         <TabPanel>
-                            <h2>React-PDF Reader</h2>
+                            <h4>React-PDF Reader</h4>
                             <div>
-                                pdf reader
+                                <PdfRenderer/>
                             </div>
 
                         </TabPanel>

@@ -26,10 +26,9 @@ const PdfRenderer = ({children}) => {
 
 
     return (
-        <PDFViewer
+        <PDFViewer>
             <Document>
-                <Page
-                    size="A4"
+                <Page size="A4"
                     onRender={onPdfRendered}
                     style={styles.page}>
                     <View>

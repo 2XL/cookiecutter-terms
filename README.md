@@ -14,24 +14,22 @@ cookiecutter .
     1. Generate React component
 
 ```
-/view/pdf/     
-```
-    
-    2. PDF Viewer    
+
+- Generate From Markdown 
 
 ```
-/view/pdf/download/  # /action/cmd/action/
-```    
-
-    - TODO: Generate PDF
+   
     
 ```
-/view/pdf/edit/
+
+Peer to Peer 
 ```    
     - TODO: Generate Terms Update Editor Page - Create editor interface, connect instances with RtcDataChannel && RtcPeerConnection(WebRTC)
 
 ```
-/view/pdf/edit/translate/ # view pdf, edit and translate it
+
+- Translate Editor Interface
+
 ```    
     - TODO: Generate [Translations](https://react-pdf.org/repl?example=page-wrap) exponer interficie interactiva para traducir
 
@@ -41,9 +39,9 @@ expose the app trough github.io or netlify
 ### Dependencies
 
 
-- react-markdown: for markdown rendering
-- react-pdf: for pdf generation
-- TODO: react-intl: for translations
+- [react-markdown](https://github.com/rexxars/react-markdown): for markdown rendering
+- [react-pdf](https://github.com/diegomura/react-pdf): for pdf generation
+- react-intl: for translations
 
 
 ### Getting Started with React
