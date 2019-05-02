@@ -6,33 +6,11 @@ cookiecutter terms and conditions
 this is a side project to learn pdf generation and interactive site content translations
 
 ### Feature 
-    
-```
-cookiecutter .
-```
-    0. Generate Markdown    
-    1. Generate React component
 
-```
-
-- Generate From Markdown 
-
-```
-   
-    
-```
-
-Peer to Peer 
-```    
-    - TODO: Generate Terms Update Editor Page - Create editor interface, connect instances with RtcDataChannel && RtcPeerConnection(WebRTC)
-
-```
-
-- Translate Editor Interface
-
-```    
-    - TODO: Generate [Translations](https://react-pdf.org/repl?example=page-wrap) exponer interficie interactiva para traducir
-
+ 0. Generate Markdown    
+ 1. Generate React component
+ 2. TODO: Generate Terms Update Editor Page - Create editor interface, connect instances with RtcDataChannel && RtcPeerConnection(WebRTC)
+ 3. TODO: Generate [Translations](https://react-pdf.org/repl?example=page-wrap) exponer interficie interactiva para traducir
 
 expose the app trough github.io or netlify         
 
