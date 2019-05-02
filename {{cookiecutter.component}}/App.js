@@ -6,7 +6,7 @@ import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 import "react-tabs/style/react-tabs.css";
 
 import PdfRenderer from './components/PdfRenderer'
-import Intl from "./components/IntlTrans"
+// import Intl from "./components/IntlTrans"
 
 
 
@@ -34,6 +34,7 @@ class App extends Component {
                         <TabList>
                             <Tab>Default view</Tab>
                             <Tab>Reader Pdf</Tab>
+                            <Tab>Live Edit</Tab>
                         </TabList>
 
                         <TabPanel>
@@ -41,7 +42,7 @@ class App extends Component {
                                 Markdown Reader
                             </h4>
                             <div>
-                                <{{cookiecutter.component_name}}>
+                                <{{cookiecutter.component_name}} isRaw={false}>
 
                                 </{{cookiecutter.component_name}}>
                             </div>
@@ -49,9 +50,16 @@ class App extends Component {
                         <TabPanel>
                             <h4>React-PDF Reader</h4>
                             <div>
-                                <PdfRenderer/>
+                                <PdfRenderer>
+                                    <{{cookiecutter.component_name}} isRaw={true}>
+
+                                    </{{cookiecutter.component_name}}>
+                                </PdfRenderer>
                             </div>
 
+                        </TabPanel>
+                        <TabPanel>
+                            <h4>React-PDF Reader</h4>
                         </TabPanel>
                     </Tabs>
 

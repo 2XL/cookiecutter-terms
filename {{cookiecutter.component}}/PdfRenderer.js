@@ -17,24 +17,32 @@ const styles = StyleSheet.create({
     }
 });
 
+const PDFViewerStyle = {
+    width: "100%",
+    height: "100%",
+    minHeight: "1800px"
+};
+
 // Create Document Component
 const PdfRenderer = ({children}) => {
     console.log(children);
+
     const onPdfRendered = () => {
         console.log("rendered")
     };
 
 
     return (
-        <PDFViewer>
+        <PDFViewer style={PDFViewerStyle}>
             <Document>
                 <Page size="A4"
                     onRender={onPdfRendered}
                     style={styles.page}>
                     <View>
-
+                        <Text>
+                            {children}
+                        </Text>
                     </View>
-                    {/*{children}*/}
                 </Page>
             </Document>
         </PDFViewer>
