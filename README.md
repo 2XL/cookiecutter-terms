@@ -9,10 +9,15 @@ this is a side project to learn pdf generation and interactive site content tran
 
  0. Generate Markdown    
  1. Generate React component
- 2. TODO: Generate Terms Update Editor Page - Create editor interface, connect instances with RtcDataChannel && RtcPeerConnection(WebRTC)
+ 2. Generate Terms Update Editor Page - Create editor interface (React Forms)
  3. TODO: Generate [Translations](https://react-pdf.org/repl?example=page-wrap) exponer interficie interactiva para traducir
 
-expose the app trough github.io or netlify         
+expose the example app trough github.io or netlify        
+
+```bash
+
+```
+ 
 
 ### Dependencies
 
@@ -46,7 +51,7 @@ Inside that directory, you can run several commands:
 
   npm run eject
     Removes this tool and copies build dependencies, configuration files
-    and scripts into the app directory. If you do this, you can’t go back!
+    and scripts into the app directory. If you do this, you can't go back!
 
 We suggest that you begin by typing:
 
@@ -82,9 +87,8 @@ npm install && npm start
 
 chromium-browser http://localhost:3000 # replace with ur browser of choice
 
-
-
 ```
+
 
 
 
@@ -93,6 +97,5 @@ chromium-browser http://localhost:3000 # replace with ur browser of choice
 - TODO: testing cookiecutter 
 
 {{cookiecutter.repo_name}}/{{cookiecutter.repo_name}}/{{cookiecutter.repo_name}}.py
-
 
 - TODO: testing react component

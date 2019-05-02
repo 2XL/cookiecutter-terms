@@ -60,6 +60,9 @@ class App extends Component {
                         </TabPanel>
                         <TabPanel>
                             <h4>React-PDF Reader</h4>
+                            <div>
+
+                            </div>
                         </TabPanel>
                     </Tabs>
 

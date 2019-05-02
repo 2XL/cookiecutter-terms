@@ -52,5 +52,24 @@ create:
 clean:
 	@echo "TODO"
 
+## run the app
+run:
+	@cd app && npm start
+
+## install dev env requirements
+dev-dep:
+	@cd app && npm install gh-pages --save-dev
+
+## deploy to pages
+deploy:
+	@cd app && npm run deploy
+
+
+## get application versions
+version:
+	@node --version
+	@npm --version
+	@create-react-app --version
+	@sed --version
 
 .PHONY:

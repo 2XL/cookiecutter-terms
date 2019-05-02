@@ -40,7 +40,12 @@ const PdfRenderer = ({children}) => {
                     style={styles.page}>
                     <View>
                         <Text>
-                            {children}
+                            {
+                                console.log(children.props)
+                            }
+                            {
+                                children
+                            }
                         </Text>
                     </View>
                 </Page>
