@@ -1,6 +1,8 @@
 # cookiecutter-terms
 cookiecutter terms and conditions
 
+:: https://2xl.github.io/cookiecutter-terms/ :: 
+
 ### Motivation
 
 this is a side project to learn pdf generation and interactive site content translations

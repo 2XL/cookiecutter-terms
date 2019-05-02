@@ -7,9 +7,7 @@ Terms and Conditions ("Terms")
 
 Last updated: {{cookiecutter.year}}
 
-Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using
-the {{cookiecutter.site_name}} website and the My Mobile App {{cookiecutter.app_name}}
-mobile application (the "Service") operated by My Company {{cookiecutter.company_name}} ("us", "we", or "our").
+Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the {{cookiecutter.site_name}} website and the My Mobile App {{cookiecutter.app_name}} mobile application (the "Service") operated by My Company {{cookiecutter.company_name}} ("us", "we", or "our").
 
 Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms.
 These Terms apply to all visitors, users and others who access or use the Service.
@@ -45,4 +43,6 @@ What constitutes a material change will be determined at our sole discretion.
 
 ## Contact Us
 
-If you have any questions about these Terms, please contact us. mailto:{{cookiecutter.email}}
+If you have any questions about these Terms, please contact us. 
+
+mailto:{{cookiecutter.email}}
