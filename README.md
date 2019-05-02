@@ -1,6 +1,7 @@
 # cookiecutter-terms
 cookiecutter terms and conditions
 
+[![CircleCI](https://circleci.com/gh/2XL/cookiecutter-terms.svg?style=svg)](https://circleci.com/gh/2XL/cookiecutter-terms)
 [demo](https://2xl.github.io/cookiecutter-terms/) 
 
 ### Motivation
