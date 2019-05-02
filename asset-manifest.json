@@ -1,15 +1,15 @@
 {
-  "main.css": "/cookiecutter-terms/static/css/main.764bcd90.chunk.css",
-  "main.js": "/cookiecutter-terms/static/js/main.a86048e3.chunk.js",
-  "main.js.map": "/cookiecutter-terms/static/js/main.a86048e3.chunk.js.map",
+  "main.css": "/cookiecutter-terms/static/css/main.b33fe78b.chunk.css",
+  "main.js": "/cookiecutter-terms/static/js/main.2b4180bd.chunk.js",
+  "main.js.map": "/cookiecutter-terms/static/js/main.2b4180bd.chunk.js.map",
   "runtime~main.js": "/cookiecutter-terms/static/js/runtime~main.724931b5.js",
   "runtime~main.js.map": "/cookiecutter-terms/static/js/runtime~main.724931b5.js.map",
   "static/css/2.e7ba0d52.chunk.css": "/cookiecutter-terms/static/css/2.e7ba0d52.chunk.css",
-  "static/js/2.af9d2d9b.chunk.js": "/cookiecutter-terms/static/js/2.af9d2d9b.chunk.js",
-  "static/js/2.af9d2d9b.chunk.js.map": "/cookiecutter-terms/static/js/2.af9d2d9b.chunk.js.map",
+  "static/js/2.9a03e42d.chunk.js": "/cookiecutter-terms/static/js/2.9a03e42d.chunk.js",
+  "static/js/2.9a03e42d.chunk.js.map": "/cookiecutter-terms/static/js/2.9a03e42d.chunk.js.map",
   "index.html": "/cookiecutter-terms/index.html",
-  "precache-manifest.da0f1a27e17d3fb6d642cb7522a88f66.js": "/cookiecutter-terms/precache-manifest.da0f1a27e17d3fb6d642cb7522a88f66.js",
+  "precache-manifest.da8a8b8e1e35df122e08a8fd6c17918b.js": "/cookiecutter-terms/precache-manifest.da8a8b8e1e35df122e08a8fd6c17918b.js",
   "service-worker.js": "/cookiecutter-terms/service-worker.js",
   "static/css/2.e7ba0d52.chunk.css.map": "/cookiecutter-terms/static/css/2.e7ba0d52.chunk.css.map",
-  "static/css/main.764bcd90.chunk.css.map": "/cookiecutter-terms/static/css/main.764bcd90.chunk.css.map"
+  "static/css/main.b33fe78b.chunk.css.map": "/cookiecutter-terms/static/css/main.b33fe78b.chunk.css.map"
 }
