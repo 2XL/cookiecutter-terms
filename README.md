@@ -1,7 +1,7 @@
 # cookiecutter-terms
 cookiecutter terms and conditions
 
-:: https://2xl.github.io/cookiecutter-terms/ :: 
+[demo](https://2xl.github.io/cookiecutter-terms/) 
 
 ### Motivation
 
@@ -9,24 +9,16 @@ this is a side project to learn pdf generation and interactive site content tran
 
 ### Feature 
 
- 0. Generate Markdown    
- 1. Generate React component
- 2. Generate Terms Update Editor Page - Create editor interface (React Forms)
- 3. TODO: Generate [Translations](https://react-pdf.org/repl?example=page-wrap) exponer interficie interactiva para traducir
-
-expose the example app trough github.io or netlify        
-
-```bash
-
-```
- 
+ 0. Cookie-cutter Generate Markdown :: app/src/terms_and_conditions.md    
+ 1. Cookie-cutter Generate React component :: app/src/components/Terms.js
+ 2. React Interface to Customize Terms for Download :: app/src/components/LiveEdit.js
+  
 
 ### Dependencies
 
 
 - [react-markdown](https://github.com/rexxars/react-markdown): for markdown rendering
 - [react-pdf](https://github.com/diegomura/react-pdf): for pdf generation
-- react-intl: for translations
 
 
 ### Getting Started with React
@@ -91,7 +83,12 @@ chromium-browser http://localhost:3000 # replace with ur browser of choice
 
 ```
 
+## Deploy
 
+```bash
+# expose the example app trough github.io or netlify        
+make deploy
+```
 
 
 ### Tests
