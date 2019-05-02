@@ -1,14 +1,14 @@
 import React from 'react';
 
-import {Document, Page, Text, View, StyleSheet, Font} from '@react-pdf/renderer';
+import {Document, Page, Text, StyleSheet} from '@react-pdf/renderer';
 
 import {PDFViewer} from '@react-pdf/renderer';
 
 
-Font.register(
-    'https://fonts.gstatic.com/s/oswald/v13/Y_TKV6o8WovbUd3m_X9aAA.ttf',
-    {family: 'Oswald'},
-);
+// Font.register(
+//     'https://fonts.gstatic.com/s/oswald/v13/Y_TKV6o8WovbUd3m_X9aAA.ttf',
+//     {family: 'Oswald'},
+// );
 
 // Create styles
 const styles = StyleSheet.create({

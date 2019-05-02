@@ -5,9 +5,8 @@ import Terms from './components/Terms'
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 import "react-tabs/style/react-tabs.css";
 
-import PdfRenderer from './components/PdfRenderer'
-// import Intl from "./components/IntlTrans"
-
+// import PdfRenderer from './components/PdfRenderer'
+import LiveEditor from './components/LiveEditor'
 
 
 
@@ -33,7 +32,7 @@ class App extends Component {
                     <Tabs style={TabsStyle} onSelect={this.onTabSelectEvent}>
                         <TabList>
                             <Tab>Default view</Tab>
-                            <Tab>Reader Pdf</Tab>
+                            {/*<Tab>Reader Pdf</Tab>*/}
                             <Tab>Live Edit</Tab>
                         </TabList>
 
@@ -47,21 +46,25 @@ class App extends Component {
                                 </Terms>
                             </div>
                         </TabPanel>
+                        {/*<TabPanel>*/}
+                            {/*<h4>React-PDF Reader</h4>*/}
+                            {/*<div>*/}
+                                {/*<PdfRenderer>*/}
+                                    {/*<Terms isRaw={true}>*/}
+
+                                    {/*</Terms>*/}
+                                {/*</PdfRenderer>*/}
+                            {/*</div>*/}
+
+                        {/*</TabPanel>*/}
                         <TabPanel>
                             <h4>React-PDF Reader</h4>
                             <div>
-                                <PdfRenderer>
+                                <LiveEditor>
                                     <Terms isRaw={true}>
 
                                     </Terms>
-                                </PdfRenderer>
-                            </div>
-
-                        </TabPanel>
-                        <TabPanel>
-                            <h4>React-PDF Reader</h4>
-                            <div>
-
+                                </LiveEditor>
                             </div>
                         </TabPanel>
                     </Tabs>

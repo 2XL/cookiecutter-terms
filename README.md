@@ -12,7 +12,7 @@ this is a side project to learn pdf generation and interactive site content tran
 
  0. Cookie-cutter Generate Markdown :: app/src/terms_and_conditions.md    
  1. Cookie-cutter Generate React component :: app/src/components/Terms.js
- 2. React Interface to Customize Terms for Download :: app/src/components/LiveEdit.js
+ 2. React Interface to Customize Terms for Download :: app/src/components/LiveEditor.js
   
 
 ### Dependencies
